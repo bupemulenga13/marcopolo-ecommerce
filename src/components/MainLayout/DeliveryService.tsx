@@ -19,58 +19,40 @@ const DeliveryService = () => {
         }}
       >
         <Grid item xs={4}>
-          <Card sx={{ display: "block" }}>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <CardContent sx={{ flex: "1 0 auto" }}>
-                <Typography component="div" variant="h6">
-                  Free Shipping
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  color="text.secondary"
-                  component="div"
-                >
-                  Mac Miller
-                </Typography>
-              </CardContent>
-            </Box>
-          </Card>
+          <Typography component="div" variant="h6">
+            Free Shipping
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            color="text.secondary"
+            component="div"
+          >
+            For all tiles on wholesale price
+          </Typography>
         </Grid>
         <Grid item xs={4}>
-          <Card sx={{ display: "block" }}>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <CardContent sx={{ flex: "1 0 auto" }}>
-                <Typography component="div" variant="h6">
-                  Free Shipping
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  color="text.secondary"
-                  component="div"
-                >
-                  Mac Miller
-                </Typography>
-              </CardContent>
-            </Box>
-          </Card>
+          <Typography component="div" variant="h6">
+            Support 24/7
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            color="text.secondary"
+            component="div"
+          >
+            Call out staff for assitance
+          </Typography>
         </Grid>
         <Grid item xs={4}>
-          <Card sx={{ display: "block" }}>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <CardContent sx={{ flex: "1 0 auto" }}>
-                <Typography component="div" variant="h6">
-                  Free Shipping
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  color="text.secondary"
-                  component="div"
-                >
-                  Mac Miller
-                </Typography>
-              </CardContent>
-            </Box>
-          </Card>
+          <Typography component="div" variant="h6">
+            Hot Offers
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            color="text.secondary"
+            component="div"
+          >
+            Up to 50% discounts on select tiles
+          </Typography>
         </Grid>
       </Grid>
     </Container>

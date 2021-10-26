@@ -8,10 +8,8 @@ import GlobalStyles from "@mui/material/GlobalStyles";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { ShoppingCartOutlined, SearchOutlined } from "@mui/icons-material";
 
-
 const MainNavBar = () => {
   return (
-    
     <React.Fragment>
       <GlobalStyles
         styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
