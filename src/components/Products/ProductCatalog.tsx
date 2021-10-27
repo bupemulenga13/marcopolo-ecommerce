@@ -18,9 +18,12 @@ const ProductCatalog = () => {
   return (
     <div>
       <Container fixed>
-        <Typography variant="h4" sx={{ mb: 5 }}>
-          Products
-        </Typography>
+        <Box mt={4}>
+          <Typography variant="h4" sx={{ mb: 5 }}>
+            Products
+          </Typography>
+        </Box>
+
         <div>
           <FormGroup>
             <FormControlLabel
@@ -43,7 +46,9 @@ const ProductCatalog = () => {
               <ProductSort />
             </Stack>
           </Stack>
-          <ProductList products={floorTiles} />
+          <Box mt={2} mb={4}>
+            <ProductList products={floorTiles} />
+          </Box>
         </div>
       </Container>
     </div>

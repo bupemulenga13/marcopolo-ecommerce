@@ -35,11 +35,11 @@ const ProductFilter = () => {
         divider={<Divider orientation="vertical" flexItem />}
         sx={{ px: 1, py: 2 }}
       >
-        <Item>Size</Item>
+        <Item>Tile Size</Item>
         <Item>Dimensions</Item>
         <Item>Color</Item>
-        <Item>Finish/Texture</Item>
-        <Item>Finish/Texture</Item>
+        <Item>Finishes</Item>
+        <Item>Materials</Item>
         <Item>Application</Item>
         <Item>Suitable Rooms</Item>
       </Stack>

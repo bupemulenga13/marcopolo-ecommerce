@@ -7,6 +7,7 @@ import Link from "@mui/material/Link";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { ShoppingCartOutlined, SearchOutlined } from "@mui/icons-material";
+import ProductCatalog from "../Products/ProductCatalog";
 
 const MainNavBar = () => {
   return (

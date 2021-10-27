@@ -1,44 +1,12 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardHeader from "@mui/material/CardHeader";
-import Grid from "@mui/material/Grid";
-import StarIcon from "@mui/icons-material/StarBorder";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Container from "@mui/material/Container";
-
-const customerTypes = [
-  {
-    title: "Home/Office Owner",
-    description: [
-      "10 users included",
-      "2 GB of storage",
-      "Help center access",
-      "Email support",
-    ],
-  },
-  {
-    title: "Builder",
-    description: [
-      "20 users included",
-      "10 GB of storage",
-      "Help center access",
-      "Priority email support",
-    ],
-  },
-  {
-    title: "Distributor/Importer",
-    description: [
-      "50 users included",
-      "30 GB of storage",
-      "Help center access",
-      "Phone & email support",
-    ],
-  },
-];
+import latestArrivals from "../../utils/latestArrivals";
 
 const LatestArrivals = () => {
   return (
@@ -55,43 +23,21 @@ const LatestArrivals = () => {
       <Typography variant="h6" align="center" color="text.secondary" paragraph>
         Select from our wide range of new products
       </Typography>
-      <Grid container spacing={3} alignItems="flex-end">
-        {customerTypes.map((tier) => (
-          // Enterprise card is full width at sm breakpoint
-          <Grid item key={tier.title} xs={12} sm={6} md={4}>
-            <Card>
-              <CardHeader
-                title={tier.title}
-                titleTypographyProps={{ align: "center" }}
-                action={tier.title === "Pro" ? <StarIcon /> : null}
-                subheaderTypographyProps={{
-                  align: "center",
-                }}
-                sx={{
-                  backgroundColor: (theme) =>
-                    theme.palette.mode === "light"
-                      ? theme.palette.grey[200]
-                      : theme.palette.grey[700],
-                }}
+      <Box>
+        <ImageList variant="masonry" cols={3} gap={8}>
+          {latestArrivals.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=248&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
               />
-              <CardContent>
-                <ul>
-                  {tier.description.map((line) => (
-                    <Typography
-                      component="li"
-                      variant="subtitle1"
-                      align="center"
-                      key={line}
-                    >
-                      {line}
-                    </Typography>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+              <ImageListItemBar position="below" title={item.category} />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </Box>
     </Container>
   );
 };

@@ -4,8 +4,6 @@ export const floorTiles = [
     src: "./images/tile1.jpg",
     title: "Glazed Polished Porcelain",
     finishing: "Natural",
-    rows: 2,
-    cols: 2,
   },
   {
     id: 2,
@@ -34,6 +32,18 @@ export const floorTiles = [
   {
     id: 6,
     src: "./images/tile5.jpg",
+    title: "Polished porcelain",
+    finishing: "Structure/Textured",
+  },
+  {
+    id: 7,
+    src: "./images/tile7.jpg",
+    title: "Polished porcelain",
+    finishing: "Structure/Textured",
+  },
+  {
+    id: 8,
+    src: "./images/tile8.jpg",
     title: "Polished porcelain",
     finishing: "Structure/Textured",
   },

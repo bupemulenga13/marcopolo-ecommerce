@@ -15,6 +15,8 @@ import SignIn from "./components/Authentication/SignIn";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import DeliveryService from "./components/MainLayout/DeliveryService";
 import ProductCatalog from "./components/Products/ProductCatalog";
+import TileVisualizer from "./components/Vizualizer/TileVisualizer";
+import ProductDetails from "./components/Products/ProductDetails";
 
 const themeLight = createTheme({
   palette: {
@@ -40,7 +42,7 @@ function App() {
           <DeliveryService />
         </div>
         <div>
-          <LatestArrivals />
+          
         </div>
         <div>
           <ProductGroupings />
@@ -54,7 +56,10 @@ function App() {
           {/* <SignIn /> */}
           {/* <Checkout /> */}
           <div>
-            <ProductCatalog />
+            {/*  <TileVisualizer /> */}
+            {/* <LatestArrivals /> */}
+            {/* <ProductCatalog /> */}
+            <ProductDetails />
           </div>
         </ThemeProvider>
       </Router>
